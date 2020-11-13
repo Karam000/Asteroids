@@ -12,7 +12,7 @@ public class AsteroidProbs_SO : ScriptableObject
         Medium,
         Small
     }
-    public GameObject AsteroidPrefab;
+    public Asteroid AsteroidPrefab;
     public AsteroidSize asteroidSize;
     public float Speed;
     public int DestructionScore;

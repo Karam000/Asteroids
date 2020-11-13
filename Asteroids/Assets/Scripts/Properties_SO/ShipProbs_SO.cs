@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName ="New Ship",menuName ="SO/Ship")]
 public class ShipProbs_SO : ScriptableObject
 {
-    public GameObject Shiprefab;
+    public Ship ShipPrefab;
     public int NumberOfLives;
     public float Speed;
 }
