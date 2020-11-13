@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] ShipProbs_SO Ship;
-    [SerializeField] AsteroidProbs_SO[] Asteroids;
-    [SerializeField] BulletProbs_SO Bullet;
+    [SerializeField] Ship Ship;
+    [SerializeField] Asteroid[] Asteroids;
+    [SerializeField] Bullet Bullet;
     void Start()
     {
-        Instantiate(Ship.ShipPrefab.gameObject);
-        Instantiate(Asteroids[0].AsteroidPrefab.gameObject);
-        Instantiate(Bullet.BulletPrefab.gameObject);
-
+        //Instantiate(Ship.ShipPrefab.gameObject);
+        //Instantiate(Asteroids[0].AsteroidPrefab.gameObject);
+        //Instantiate(Bullet.BulletPrefab.gameObject);
+        Bullet.spawn();
     }
 
     void Update()

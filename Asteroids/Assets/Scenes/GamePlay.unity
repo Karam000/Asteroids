@@ -233,10 +233,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74eb6aea626baf94c911fe9d15ccec4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ship: {fileID: 11400000, guid: 7bade79e948a6ab4a8a9c726b0e47da9, type: 2}
+  Ship: {fileID: -7258322615938973140, guid: 71ed746ea6d3974469c0ef8453384470, type: 3}
   Asteroids:
-  - {fileID: 11400000, guid: 4ce9d0d38ea34e949b3b46bfb613100d, type: 2}
-  Bullet: {fileID: 11400000, guid: 8ac2445a87daaeb48af8962180b1a48c, type: 2}
+  - {fileID: -5455573148691415278, guid: d94373572606adf439fdd47c17562b34, type: 3}
+  Bullet: {fileID: -6845300496911109909, guid: 593d16ae321e83749a633f14f126c1bb, type: 3}
 --- !u!4 &1700346907
 Transform:
   m_ObjectHideFlags: 0

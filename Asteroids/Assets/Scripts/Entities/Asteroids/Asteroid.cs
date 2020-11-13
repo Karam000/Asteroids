@@ -4,4 +4,5 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
+    [SerializeField] AsteroidProbs_SO AsteroidProbs;
 }

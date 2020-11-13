@@ -4,4 +4,5 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour
 {
+    [SerializeField] ShipProbs_SO ShipProbs;
 }

@@ -6,6 +6,5 @@ using UnityEngine;
 
 public class BulletProbs_SO : ScriptableObject
 {
-    public Bullet BulletPrefab;
     public float Speed;
 }

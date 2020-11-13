@@ -94,4 +94,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e5f538b8a84e85419b6991d0ae82240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AsteroidProbs: {fileID: 0}
+  AsteroidProbs: {fileID: 11400000, guid: 1ab0a13946f7c2745b62a10fe8813219, type: 2}
