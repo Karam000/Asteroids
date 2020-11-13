@@ -7,31 +7,22 @@ public class GameManager : MonoBehaviour
     [SerializeField] Ship Ship;
     [SerializeField] Asteroid[] Asteroids;
     [SerializeField] Bullet Bullet;
-
-    float LastTime;
-
-    //private List<Asteroid> InstantiatedAsteroids = new List<Asteroid>(); 
+    
+    private float LastTime;
     void Start()
     {
-        //Instantiate(Ship.ShipPrefab.gameObject);
-        //Instantiate(Asteroids[0].AsteroidPrefab.gameObject);
-        //Instantiate(Bullet.BulletPrefab.gameObject);
-        //Initialize();
         LastTime = Time.time;
+        Initialize();
     }
    
     void Update()
     {
-        LastTime = GenerateRandomAsteroid(LastTime);
+        //LastTime = GenerateRandomAsteroid(LastTime);
     }
 
     private void Initialize()
     {
-        //foreach (var Asteroid in Asteroids)
-        //{
-        //    Vector2 pos = new Vector2(Random.Range(0, 5), Random.Range(0, 5));
-        //    InstantiatedAsteroids.Add(Asteroid.spawn(pos).GetComponent<Asteroid>());
-        //}
+        Ship.spawn(new Vector2(0, 0));
     }
 
     private float GenerateRandomAsteroid(float lastTime)
