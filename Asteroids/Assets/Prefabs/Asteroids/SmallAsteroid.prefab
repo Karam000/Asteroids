@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4469020738514429345}
   - component: {fileID: 5990352139693521651}
   - component: {fileID: 1446188698207968933}
+  - component: {fileID: 6373899791065896864}
   m_Layer: 0
   m_Name: SmallAsteroid
   m_TagString: Untagged
@@ -71,15 +72,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 515e275cc7a5c484c8fdacce90789e11, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.48, y: 0.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1446188698207968933
@@ -95,3 +96,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AsteroidProbs: {fileID: 11400000, guid: 1ab0a13946f7c2745b62a10fe8813219, type: 2}
+--- !u!50 &6373899791065896864
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34851020410895236}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
