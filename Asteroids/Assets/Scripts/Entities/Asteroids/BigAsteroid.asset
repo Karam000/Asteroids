@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18020b5c3d855914dac5ef791631f1dd, type: 3}
   m_Name: BigAsteroid
   m_EditorClassIdentifier: 
-  AsteroidPrefab: {fileID: 0}
+  AsteroidPrefab: {fileID: -3690855701461431856, guid: d96ca40f0087ce6438237f6ed0061128,
+    type: 3}
   asteroidSize: 0
   Speed: 0
   DestructionScore: 0

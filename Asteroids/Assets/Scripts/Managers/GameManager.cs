@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] ShipProbs_SO Ship;
+    [SerializeField] AsteroidProbs_SO[] Asteroids;
+    [SerializeField] BulletProbs_SO Bullet;
     void Start()
     {
-        
+        Instantiate(Ship.ShipPrefab.gameObject);
+        Instantiate(Asteroids[0].AsteroidPrefab.gameObject);
+        Instantiate(Bullet.BulletPrefab.gameObject);
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         
