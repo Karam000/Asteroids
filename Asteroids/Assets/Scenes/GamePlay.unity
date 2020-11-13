@@ -235,7 +235,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ship: {fileID: -7258322615938973140, guid: 71ed746ea6d3974469c0ef8453384470, type: 3}
   Asteroids:
+  - {fileID: 1446188698207968933, guid: 9c70901c7caefe8499000e973da73f61, type: 3}
   - {fileID: -5455573148691415278, guid: d94373572606adf439fdd47c17562b34, type: 3}
+  - {fileID: -3690855701461431856, guid: d96ca40f0087ce6438237f6ed0061128, type: 3}
   Bullet: {fileID: -6845300496911109909, guid: 593d16ae321e83749a633f14f126c1bb, type: 3}
 --- !u!4 &1700346907
 Transform:

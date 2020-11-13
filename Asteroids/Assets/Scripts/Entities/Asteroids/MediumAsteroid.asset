@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18020b5c3d855914dac5ef791631f1dd, type: 3}
   m_Name: MediumAsteroid
   m_EditorClassIdentifier: 
-  AsteroidPrefab: {fileID: -5455573148691415278, guid: d94373572606adf439fdd47c17562b34,
-    type: 3}
   asteroidSize: 1
-  Speed: 0
+  Speed: 3
   DestructionScore: 0
