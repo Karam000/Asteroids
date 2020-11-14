@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a5d589c295550948ba3be4b85eb8b2b, type: 3}
   m_Name: Ship
   m_EditorClassIdentifier: 
-  ShipPrefab: {fileID: -7258322615938973140, guid: 71ed746ea6d3974469c0ef8453384470,
-    type: 3}
   NumberOfLives: 0
-  Speed: 0
+  Speed: 200

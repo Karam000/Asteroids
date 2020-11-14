@@ -14,10 +14,14 @@ public class GameManager : MonoBehaviour
         LastTime = Time.time;
         Initialize();
     }
-   
+
+    private void FixedUpdate()
+    {
+        Ship.Move();
+    }
     void Update()
     {
-        //LastTime = GenerateRandomAsteroid(LastTime);
+        GenerateRandomAsteroid();
     }
 
     private void Initialize()
@@ -25,16 +29,15 @@ public class GameManager : MonoBehaviour
         Ship.spawn(new Vector2(0, 0));
     }
 
-    private float GenerateRandomAsteroid(float lastTime)
+    private void GenerateRandomAsteroid()
     {
-        if (Time.time - lastTime >= 3)
+        if (Time.time - LastTime >= 1.5f)
         {
             int randomAsteroidType = Random.Range(0, Asteroids.Length);
             Vector2 RandomSpawnPosition = new Vector2(Random.Range(0, 5), Random.Range(0, 5));
             Asteroids[randomAsteroidType].spawn(RandomSpawnPosition);
-            lastTime = Time.time;
+            LastTime = Time.time;
         }
-        return lastTime;
     }
    
 }
