@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AsteroidProbs: {fileID: 11400000, guid: 1ab0a13946f7c2745b62a10fe8813219, type: 2}
+  Parent: {fileID: 5204883081283445157, guid: 4f12b2e50b2e681499528a7289e938a3, type: 3}
 --- !u!50 &6373899791065896864
 Rigidbody2D:
   serializedVersion: 4

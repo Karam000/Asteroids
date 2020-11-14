@@ -7,7 +7,6 @@ public class Asteroid : CommonBehaviours
     [SerializeField] AsteroidProbs_SO AsteroidProbs;
     private static Vector2 direction;
     protected static Rigidbody2D MyRB;
-
     
     private void Awake()
     {

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a5d589c295550948ba3be4b85eb8b2b, type: 3}
   m_Name: Ship
   m_EditorClassIdentifier: 
-  NumberOfLives: 0
+  NumberOfLives: 3
   Speed: 300
   SteeringRotation: 2

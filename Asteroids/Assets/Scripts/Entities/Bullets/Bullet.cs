@@ -6,6 +6,7 @@ public class Bullet : CommonBehaviours
 {
     [SerializeField] BulletProbs_SO BulletProbs;
     static Rigidbody2D MyRB;
+
     public void spawn(Vector2 position, Quaternion rotation, Transform parent = null)
     {
         MyRB = Instantiate(this.gameObject,position,rotation,parent).GetComponent<Rigidbody2D>();

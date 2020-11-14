@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletProbs: {fileID: 11400000, guid: 8ac2445a87daaeb48af8962180b1a48c, type: 2}
+  Parent: {fileID: 4102681609869885843, guid: 32d2038db3ca0c34c895c70bdc8bff31, type: 3}
 --- !u!50 &-5448911505027019538
 Rigidbody2D:
   serializedVersion: 4

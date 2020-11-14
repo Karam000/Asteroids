@@ -121,7 +121,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &109263713
+--- !u!1 &4745879
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,7 +129,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 109263714}
+  - component: {fileID: 4745881}
+  - component: {fileID: 4745880}
   m_Layer: 0
   m_Name: AsteroidParent
   m_TagString: Untagged
@@ -137,13 +138,95 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &109263714
+--- !u!114 &4745880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4745879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6651d19fa179949a3aef9ccbfe51f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &4745881
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109263713}
+  m_GameObject: {fileID: 4745879}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.051971, y: 1.5557958, z: -20.895329}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &167256447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 167256449}
+  - component: {fileID: 167256448}
+  m_Layer: 0
+  m_Name: EveneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &167256448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167256447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 723c8873710b3344090ad1b4a87c1531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShipDie:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -987969285471208963, guid: 32d2038db3ca0c34c895c70bdc8bff31,
+          type: 3}
+        m_MethodName: DestroyMyChildren
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5204883081283445156, guid: 4f12b2e50b2e681499528a7289e938a3,
+          type: 3}
+        m_MethodName: DestroyMyChildren
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &167256449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167256447}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13.051971, y: 1.5557958, z: -20.895329}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -268,8 +351,7 @@ MonoBehaviour:
   - {fileID: 1446188698207968933, guid: 9c70901c7caefe8499000e973da73f61, type: 3}
   - {fileID: -5455573148691415278, guid: d94373572606adf439fdd47c17562b34, type: 3}
   - {fileID: -3690855701461431856, guid: d96ca40f0087ce6438237f6ed0061128, type: 3}
-  Bullet: {fileID: -6845300496911109909, guid: 593d16ae321e83749a633f14f126c1bb, type: 3}
-  AsteroidParent: {fileID: 109263714}
+  AsteroidParent: {fileID: 0}
 --- !u!4 &1700346907
 Transform:
   m_ObjectHideFlags: 0
