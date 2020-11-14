@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18020b5c3d855914dac5ef791631f1dd, type: 3}
   m_Name: SmallAsteroid
   m_EditorClassIdentifier: 
-  asteroidSize: 2
+  asteroidSize: 0
   Speed: 3
   DestructionScore: 0
+  NextSmallerAsteroid: {fileID: 1446188698207968933, guid: 9c70901c7caefe8499000e973da73f61,
+    type: 3}

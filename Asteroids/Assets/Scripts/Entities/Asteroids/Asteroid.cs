@@ -18,25 +18,51 @@ public class Asteroid : CommonBehaviours
     }
     private void FixedUpdate()
     {
-        Move();
+       // Move();
     }
     private void Update()
     {
         EdgeCrossBehaviour();
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("collided");
+        if (collision.gameObject.GetComponent<Bullet>())
+        {
+            Destroy(collision.gameObject);
+            CollideWithBullet();
+        }
+    }
+   
+
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    Debug.Log("collided");
+    //    if(collision.gameObject.GetComponent<Bullet>())
+    //    {
+    //        CollideWithBullet();
+    //    }
+    //}
+    private void CollideWithBullet()
+    {
+        int size = (int)this.AsteroidProbs.asteroidSize;
+        if(size > 0)
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                this.AsteroidProbs.NextSmallerAsteroid.spawn(this.transform.position);
+                this.AsteroidProbs.NextSmallerAsteroid.Move();
+            }
+        }
+        Destroy(this.gameObject);
+    }
     public override Rigidbody2D spawn(Vector2 position, Transform parent = null)
     {
         MyRB = base.spawn(position, parent);
         return MyRB;
     }
-
-    //public void spawn(Vector2 position, Transform parent = null)
-    //{
-    //    GameObject SpawnedObject = Instantiate(this.gameObject, new Vector3(position.x, position.y, 0), Quaternion.identity, parent);
-    //    MyRB = SpawnedObject.GetComponent<Rigidbody2D>();
-    //}
-
+   
     public void Move()
     {
         MyRB.velocity = AsteroidProbs.Speed * direction.normalized;

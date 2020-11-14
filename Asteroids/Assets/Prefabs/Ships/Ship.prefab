@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShipProbs: {fileID: 11400000, guid: 7bade79e948a6ab4a8a9c726b0e47da9, type: 2}
+  BulletPrefab: {fileID: -6845300496911109909, guid: 593d16ae321e83749a633f14f126c1bb,
+    type: 3}
 --- !u!50 &-4690057848348760555
 Rigidbody2D:
   serializedVersion: 4

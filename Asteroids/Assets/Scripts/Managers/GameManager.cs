@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        GenerateRandomAsteroid();
+        //GenerateRandomAsteroid();
     }
 
     private void Initialize()
