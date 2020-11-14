@@ -7,7 +7,7 @@ public class Ship : CommonBehaviours
     [SerializeField] ShipProbs_SO ShipProbs;
     [SerializeField] Bullet BulletPrefab;
     private Rigidbody2D MyRB;
-    private GameObject MyShip;
+    private static GameObject MyShip;
     private static int MyLives;
     public override Rigidbody2D spawn(Vector2 position, Transform parent = null)
     {
@@ -32,10 +32,11 @@ public class Ship : CommonBehaviours
         if(MyLives > 0)
         {
             EventManager.Instance.ShipDie.Invoke();
+            Time.timeScale = 0;
             //Update UI
             //All bullets and asteroids disappear
             //Restart Game after 2 seconds
-            Destroy(this.gameObject);
+            Destroy(MyShip);
         }
         else if(MyLives == 0)
         {

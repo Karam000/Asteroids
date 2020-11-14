@@ -5,11 +5,14 @@ using UnityEngine;
 public class Bullet : CommonBehaviours
 {
     [SerializeField] BulletProbs_SO BulletProbs;
-    static Rigidbody2D MyRB;
+    private static Rigidbody2D MyRB;
+    private static GameObject MyBullet;
 
     public void spawn(Vector2 position, Quaternion rotation, Transform parent = null)
     {
+        EventManager.Instance.ShipDie.AddListener(OnShipLoseLife);
         MyRB = Instantiate(this.gameObject,position,rotation,parent).GetComponent<Rigidbody2D>();
+        MyBullet = MyRB.gameObject;
     }
 
     private void Update()
@@ -18,7 +21,11 @@ public class Bullet : CommonBehaviours
         EdgeCrossBehaviour();
         Destroy(this.gameObject, 7);
     }
-
+    private void OnShipLoseLife()
+    {
+        Debug.Log("bullet destroy");
+        Destroy(MyBullet);
+    }
     private void Move()
     {
         if(MyRB != null)

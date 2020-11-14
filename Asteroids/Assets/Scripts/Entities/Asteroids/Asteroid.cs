@@ -45,6 +45,6 @@ public class Asteroid : CommonBehaviours
     public void Move()
     {
         if(MyRB != null)
-        MyRB.velocity = AsteroidProbs.Speed * direction.normalized;
+        MyRB.velocity = AsteroidProbs.Speed * - direction.normalized;
     }
 }

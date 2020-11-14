@@ -196,8 +196,7 @@ MonoBehaviour:
   ShipDie:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -987969285471208963, guid: 32d2038db3ca0c34c895c70bdc8bff31,
-          type: 3}
+      - m_Target: {fileID: 4745880}
         m_MethodName: DestroyMyChildren
         m_Mode: 1
         m_Arguments:
@@ -208,7 +207,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5204883081283445156, guid: 4f12b2e50b2e681499528a7289e938a3,
+      - m_Target: {fileID: -4997027110984239974, guid: 71ed746ea6d3974469c0ef8453384470,
           type: 3}
         m_MethodName: DestroyMyChildren
         m_Mode: 1
@@ -351,7 +350,7 @@ MonoBehaviour:
   - {fileID: 1446188698207968933, guid: 9c70901c7caefe8499000e973da73f61, type: 3}
   - {fileID: -5455573148691415278, guid: d94373572606adf439fdd47c17562b34, type: 3}
   - {fileID: -3690855701461431856, guid: d96ca40f0087ce6438237f6ed0061128, type: 3}
-  AsteroidParent: {fileID: 0}
+  AsteroidParent: {fileID: 4745881}
 --- !u!4 &1700346907
 Transform:
   m_ObjectHideFlags: 0

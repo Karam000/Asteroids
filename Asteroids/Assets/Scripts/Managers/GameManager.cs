@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
         if (Time.time - LastTime >= 3f && AsteroidParent.childCount < 7)
         {
             int randomAsteroidType = Random.Range(0, Asteroids.Length);
-            Vector2 RandomSpawnPosition = new Vector2(Random.Range(0, 5), Random.Range(0, 5));
+            Vector2 RandomSpawnPosition = new Vector2(Random.Range(5, 10), Random.Range(5, 10));
             Asteroids[randomAsteroidType].spawn(RandomSpawnPosition,AsteroidParent);
             LastTime = Time.time;
         }
