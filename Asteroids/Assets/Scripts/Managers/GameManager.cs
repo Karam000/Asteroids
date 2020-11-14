@@ -6,36 +6,36 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] Ship Ship;
     [SerializeField] Asteroid[] Asteroids;
-    [SerializeField] Bullet Bullet;
+
+    [SerializeField] Transform AsteroidParent;
     
     private float LastTime;
     void Start()
     {
-        LastTime = Time.time;
-        Initialize();
+        InitializeGame();
     }
-
     private void FixedUpdate()
     {
         Ship.Move();
     }
     void Update()
     {
-        //GenerateRandomAsteroid();
+        GenerateRandomAsteroid();
     }
 
-    private void Initialize()
+    private void InitializeGame()
     {
+        LastTime = Time.time;
         Ship.spawn(new Vector2(0, 0));
     }
 
     private void GenerateRandomAsteroid()
     {
-        if (Time.time - LastTime >= 1.5f)
+        if (Time.time - LastTime >= 3f && AsteroidParent.childCount < 7)
         {
             int randomAsteroidType = Random.Range(0, Asteroids.Length);
             Vector2 RandomSpawnPosition = new Vector2(Random.Range(0, 5), Random.Range(0, 5));
-            Asteroids[randomAsteroidType].spawn(RandomSpawnPosition);
+            Asteroids[randomAsteroidType].spawn(RandomSpawnPosition,AsteroidParent);
             LastTime = Time.time;
         }
     }

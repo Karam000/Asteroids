@@ -18,33 +18,14 @@ public class Asteroid : CommonBehaviours
     }
     private void FixedUpdate()
     {
-       // Move();
+       Move();
     }
     private void Update()
     {
         EdgeCrossBehaviour();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("collided");
-        if (collision.gameObject.GetComponent<Bullet>())
-        {
-            Destroy(collision.gameObject);
-            CollideWithBullet();
-        }
-    }
-   
-
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    Debug.Log("collided");
-    //    if(collision.gameObject.GetComponent<Bullet>())
-    //    {
-    //        CollideWithBullet();
-    //    }
-    //}
-    private void CollideWithBullet()
+    protected override void CollideWithBullet()
     {
         int size = (int)this.AsteroidProbs.asteroidSize;
         if(size > 0)
@@ -62,9 +43,9 @@ public class Asteroid : CommonBehaviours
         MyRB = base.spawn(position, parent);
         return MyRB;
     }
-   
     public void Move()
     {
+        if(MyRB != null)
         MyRB.velocity = AsteroidProbs.Speed * direction.normalized;
     }
 }

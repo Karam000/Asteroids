@@ -7,4 +7,5 @@ public class ShipProbs_SO : ScriptableObject
 {
     public int NumberOfLives;
     public float Speed;
+    public float SteeringRotation;
 }

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Ship
   m_EditorClassIdentifier: 
   NumberOfLives: 0
-  Speed: 200
+  Speed: 300
+  SteeringRotation: 2

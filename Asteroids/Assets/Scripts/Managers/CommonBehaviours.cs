@@ -4,15 +4,12 @@ using UnityEngine;
 
 public abstract class CommonBehaviours : MonoBehaviour
 {
-
     public virtual Rigidbody2D spawn(Vector2 position, Transform parent = null)
     {
         GameObject SpawnedObject = Instantiate(this.gameObject, new Vector3(position.x, position.y, 0), Quaternion.identity, parent);
-        //MyRB = SpawnedObject.GetComponent<Rigidbody2D>();
         return SpawnedObject.GetComponent<Rigidbody2D>();
     }
-
-    //protected virtual void Move() { }
+    protected virtual void CollideWithBullet() { }
     protected void EdgeCrossBehaviour()
     {
         if (this.transform.position.x > 5.2f)
@@ -32,6 +29,13 @@ public abstract class CommonBehaviours : MonoBehaviour
             this.transform.position = new Vector3(this.transform.position.x, 5.2f, 0);
         }
     }
-
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!(this is Bullet) && collision.gameObject.GetComponent<Bullet>())
+        {
+            Destroy(collision.gameObject);
+            CollideWithBullet();
+        }
+    }
     
 }
