@@ -7,7 +7,6 @@ public class Asteroid : CommonBehaviours
     [SerializeField] AsteroidProbs_SO AsteroidProbs;
     private static Vector2 direction;
     protected static Rigidbody2D MyRB;
-    
     private void Awake()
     {
         do
@@ -35,6 +34,7 @@ public class Asteroid : CommonBehaviours
                 this.AsteroidProbs.NextSmallerAsteroid.Move();
             }
         }
+        EventManager.Instance.DestroyedAsteroid.Invoke();
         Destroy(this.gameObject);
     }
     public override Rigidbody2D spawn(Vector2 position, Transform parent = null)

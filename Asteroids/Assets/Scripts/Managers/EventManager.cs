@@ -14,4 +14,5 @@ public class EventManager : MonoBehaviour
     }
 
     public UnityEvent ShipDie = new UnityEvent();
+    public UnityEvent DestroyedAsteroid = new UnityEvent();
 }

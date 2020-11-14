@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Transform AsteroidParent;
     
     private float LastTime;
-    void Start()
+    void Awake()
     {
         InitializeGame();
     }

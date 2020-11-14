@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroidSize: 1
   Speed: 3
-  DestructionScore: 0
+  DestructionScore: 10
   NextSmallerAsteroid: {fileID: 1446188698207968933, guid: 9c70901c7caefe8499000e973da73f61,
     type: 3}
